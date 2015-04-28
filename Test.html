@@ -1,0 +1,23 @@
+<html>
+<header>
+    <script>
+    function apply(value){
+        barcode = document.getElementById("barcode")
+        barcode.innerHTML = value;
+    }
+    </script>
+    <style>
+    @font-face
+    {
+            font-family: BarCode;
+            src: url("BarcodeFont.ttf") format("truetype");
+    }
+    </style>
+</header>
+<body>
+        <input type="text" onchange="apply(this.value)"/>
+	<p>
+	<span id="barcode" style="font-family: BarCode; font-size: 48pt;"></span>
+        </p>
+</body>
+</html>
